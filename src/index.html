@@ -1,8 +1,32 @@
+<!--
+This is my index.html
+It is where I will hook my React app into my application
+I am hooking into the only <div> tag that is a child of my <body> tag
+This is also where I allow my webpack bundled JS functionality to exist in my HTML/website and provide interaction with the client
+-->
+<!--
+This is the document declaration
+This is where we tell the computer that the following is html 
+ -->
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <!-- 
+    This is where we set the metadata of the application
+    This is me giving the tab on the page the name of 'Breathe Easy'
+     -->
+    <head>Breathe Easy</head>
+    <!-- 
+    This is the body of the html document
+    This is where html tags that will be displayed live as children
+     -->
     <body>
+        <!-- 
+        This is the element that I'm hooking the React component into
+         -->
         <div id='root'></div>
+        <!-- 
+        This is where I hand my JS functionality off into the HTML/webpage
+         -->
         <script src='./dist/bundle.js'></script>
     </body>
 </html>

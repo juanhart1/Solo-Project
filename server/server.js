@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const accuweatherController = require('../accuWeatherController.js');
 
+console.log('You gave this shit your best!');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //this is how I handle GET requests to my root directory
